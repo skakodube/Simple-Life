@@ -1,0 +1,244 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+html{
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* =================
+Typography
+================= */
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .66rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.date-comments {
+    font-family: 'Segoe UI';
+    font-size: 0.77rem;
+    color: grey;
+}
+
+.side-bar p{
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #143774;
+}
+
+.side-bar .title{
+    font-size: 1rem;
+    font-family: 'Lora', serif;
+}
+
+.side-bar .section-title{
+    font-size: 1rem;
+    letter-spacing: 3.6px;
+    margin: 0 0 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+footer > p{
+    color: #FFFFFFFF;
+    opacity: 0.54;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+}
+
+footer > #copyright{
+    margin-top: 0;
+    font-weight: 300;
+}
+
+a{
+    color: #1792D2;
+}
+
+.container-news .continue-reading{
+    color: #1792D2;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+/* =================
+Layout
+================= */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 5em 0;
+}
+
+@media (max-width: 675px) {
+    .container-nav {
+        flex-direction: column;
+    }
+    
+    header {
+        text-align: center;
+    }
+}
+
+/* === BLOG === */
+
+.container-main {
+    margin-top: 3em; 
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-news {
+    width: 73%;
+}
+
+.container-news p {
+    color: #707070;
+}
+
+.container-preview{
+    margin-bottom: 2em;
+}
+
+.container-img-dc > img{
+    width: 100%;
+}
+
+.container-sm-preview {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0 3em;
+}
+
+.container-sm-preview > .container-img-dc{
+    width: 30%;
+}
+
+
+.container-sm-preview > .container-content{
+    width: 67%;
+}
+
+.container-sm-preview > .container-img-dc > img{
+    object-fit: cover;
+    height: 242px;
+}
+
+/* === SIDE-BAR === */
+
+.side-bar {
+    width: 22%;
+}
+
+.side-bar img {
+    width: 100%;
+}
+
+.about-me {
+    border: 16px solid #EBEBEB;
+    padding: 1.2em;
+    margin-bottom: 2em;
+}
+
+.recent-posts{
+    border: 16px solid #EBEBEB;
+    padding: 1.2em;
+}
+
+/* === FOOTER === */
+
+footer{
+    background: #143774;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em 0;
+}
+
+/* navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: .5em 0;
+    }
+}
